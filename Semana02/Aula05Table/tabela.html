@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listagem de Usuários Cadastrados</title>
+    <link rel="stylesheet" href="tabela.css">
+</head>
+<body>
+    <main>
+        <h1>Listagem de Usuários Cadastrados</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Usuário</th>
+                    <th>Telefone</th>
+                    <th>Email</th>
+                    <th>Perfil</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alex</td>
+                    <td>(47) 9 9935-7205</td>
+                    <td>alexritzmann@gmail.com</td>
+                    <td>Admin</td>
+                    <td>
+                        <button>Alterar</button>
+                        <button>Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Giovanna</td>
+                    <td>(47) 9 8919-2350</td>
+                    <td>giihtauchertgris@gmail.com</td>
+                    <td>User</td>
+                    <td>
+                        <button>Alterar</button>
+                        <button>Excluir</button>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Total de Usuários Cadastrados: 2</td>
+                </tr>
+            </tfoot>
+        </table>
+<br><br><br>
+        <h1>Situação do Aluno</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Disciplina</th>
+                    <th>Prova 01</th>
+                    <th>Prova 02</th>
+                    <th>Prova Reavaliativa</th>
+                    <th>Média</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Matemática</td>
+                    <td>8,5</td>
+                    <td>8,5</td>
+                    <td>-</td>
+                    <td>8,5</td>
+                    <td>Aprovado</td>
+                </tr>
+                <tr>
+                    <td>Português</td>
+                    <td>9</td>
+                    <td>9</td>
+                    <td>-</td>
+                    <td>9</td>
+                    <td>Aprovado</td>
+                </tr>
+                <tr>
+                    <td>Inglês</td>
+                    <td>6</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td>7</td>
+                    <td>Aprovado</td>
+                </tr>
+                <tr>
+                    <td>Front-End</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td class="reprovado">Reprovado</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="tfoot01">
+                    <td colspan="5">Total de Disciplina aprovadas: 3</td>
+                </tr>
+                <tr class="tfoot02">
+                    <td colspan="5">Total de Disciplina reprovadas: 1</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>

@@ -1,0 +1,17 @@
+
+#navbar-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(90, 133, 90);
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 0px;
+}
+
+.link-menu{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 10px; 
+
+}

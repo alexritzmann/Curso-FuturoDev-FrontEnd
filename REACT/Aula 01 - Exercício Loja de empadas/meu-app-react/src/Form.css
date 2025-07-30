@@ -1,0 +1,15 @@
+
+
+.container-form{
+    width: 60%;
+    background-color: tomato;
+    border-radius: 8px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #FFF;
+}
+
+.container-form h2{
+    text-align: center;
+    color: white;
+}

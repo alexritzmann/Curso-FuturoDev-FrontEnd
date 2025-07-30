@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aula15.css">
+    <script src="aula15Ativ4.js" defer></script>
+    
+    <title>Aula 15</title>
+
+</head>
+<body>
+    <p>Envir formulário para parágrafo (Ativ1)</p>
+    <form id="formulario">
+        <input id="input-text" type="text">
+        <button type="submit">Enviar</button>
+    </form>
+    <p id="ptext"></p>
+
+    <p>Contagem de caracter num Textarea (Ativ2)</p>
+    <form action="">
+            <label for="textarea">Cometário</label>
+            <textarea id="textarea" cols="30" rows="5" maxlength="250" placeholder="Contagem regressiva de caracteres..."></textarea>
+            <span id="contador"></span>
+    </form>
+    
+    <p>Habilitar botão quando input for preenchido </p>
+    <p>Habilitar botão de mostrar senha (Ativ3)</p>
+    <h2>Login</h2>
+    <form>
+        <fieldset>
+            <label for="usuario">Usuário</label>
+            <input id="usuario" type="text">
+
+            <label for="senha">Senha</label>
+            <input id="senha" type="password"> <span><button id="botao-mostrar" type="button"></button></span>
+        </fieldset>
+        <div class="botoes">
+            <button id="botao-entrar" type="submit">Entrar</button>
+            <a href="../../Semana02/Aula05Login/cadastrar-novo-usuario.html">
+                <button id="botao-cadastrar" type="button">Cadastrar</button>
+            </a>
+        </div>
+    </form>
+
+    <p>Criar formulario de cadastro com botao cadastrar desabilitado até todos campos estiverem preenchidos (ativ4)</p>
+    <form action="">
+        <label for="nome">Nome</label>
+        <input id="nome" type="text">
+
+        <label for="email">Email</label>
+        <input id="email" type="email">
+
+        <label for="perfil">Perfil</label>
+        <select name="perfil" id="perfil">
+            <option value="ADM">ADM</option>
+            <option value="consultor">Consultor</option>
+            <option value="analista">Analista</option>
+        </select>
+        <div>
+            <button id="botao-cadastro" type="submit">Cadastrar</button>
+            <button id="botao-limpa" type="button">Limpar</button>
+        </div>
+
+        <fieldset>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Usuário</th>
+                        <th>Email</th>
+                        <th>Perfil</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </fieldset>
+        
+    </form>
+</body>
+</html>

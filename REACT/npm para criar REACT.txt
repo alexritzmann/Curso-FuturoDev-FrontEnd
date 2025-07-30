@@ -1,0 +1,13 @@
+npm create vite@latest meu-app-react -- --template react
+
+
+SELECIONAR 
+- REACT
+- JAVASCRIPT
+
+
+depois
+
+- npm install
+- npm run dev
+

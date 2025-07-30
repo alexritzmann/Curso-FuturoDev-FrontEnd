@@ -1,0 +1,99 @@
+
+.container-header{
+  justify-content: center;
+  margin: 0px;
+  
+}
+
+#header{
+  background-color: rgb(58, 94, 58);
+  color: #fff;
+  text-align: center;
+  padding-top: 1px;
+}
+
+#div-navbar-menu{
+  background-color: rgb(90, 133, 90);
+}
+
+.container-sobre-nos{
+  background-color:rgb(179, 197, 174);
+  margin-top: 0px;
+  padding-top: 1px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+}
+
+.container{
+  display: block;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container-pq-investir{
+  background-color:lightgray;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 1px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+}
+
+.container-pq-investir > h2{
+  text-align: left;
+  margin-left: 4%;
+}
+
+.card-pq-investir{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 5px;
+  margin-left: 5px;
+}
+
+.container-produtos{
+  background-color:rgb(179, 197, 174);
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 1px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+}
+
+.container-produtos > h2{
+  text-align: left;
+  margin-left: 4%;
+}
+
+.card-produtos{
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  
+  padding: 0px 30px;
+  margin: 0px 10px;
+}
+
+.container-budget{
+  background-color:lightgray;
+  margin-top: 0px;
+  padding-top: 1px;
+  margin-bottom: 0px;
+  padding-bottom: 20px;
+}
+
+.container-budget > h2{
+  text-align: left;
+  margin-left: 4%;
+}
+
+@media screen and (max-width: 850px) {
+  .card-produtos{
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
+

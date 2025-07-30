@@ -1,0 +1,123 @@
+*{
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+main{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+form{
+    background-color: #bedbe2;
+    padding: 15px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid rgb(61, 85, 221);
+}
+
+input{
+    border: #34495e solid 2px;
+    grid-column: 1 / -1;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+select{
+    border: #34495e solid 2px;
+    grid-column: 1 / -1;
+}
+
+textarea{
+    border: #34495e solid 2px;
+    grid-column: 1 / -1;
+}
+
+button{
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 1px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    background-color: #2134dd;
+    color: #fff;
+    border: solid 2px rgb(197, 197, 230);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.celular{
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    grid-template-rows: repeat(1, 7fr);
+    grid-gap: 10px;
+    background-color: rgb(197, 197, 230);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.marca{
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 1px;
+    background-color: rgb(197, 197, 230);
+    padding: 1px;
+    border-radius: 15px;
+}
+
+.modelo{
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 1px;
+    background-color: rgb(197, 197, 230);
+    padding: 1px;
+    border-radius: 15px;
+}
+
+.cor{
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 1px;
+    background-color: rgb(197, 197, 230);
+    padding: 1px;
+    border-radius: 15px;
+}
+
+.valor{
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 1px;
+    background-color: rgb(197, 197, 230);
+    padding: 1px;
+    border-radius: 15px;
+}
+
+.estado{
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 1px;
+    background-color: rgb(197, 197, 230);
+    padding: 1px;
+    border-radius: 15px;
+}
+
+.descricao{
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 1px;
+    background-color: rgb(197, 197, 230);
+    padding: 1px;
+    border-radius: 15px;
+}
+

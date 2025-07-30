@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        #email-erro, #senha-erro {
+            color: red;
+        }
+
+    </style>
+
+
+    <title>Exercício 06</title>
+    
+</head>
+<body>
+    <main>
+        <h1>Validação de formulário</h1>
+        <fieldset>
+            <form id="meuFormulario">
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" id="email" placeholder="email@exemple.com" required>
+                    <div id="email-erro"></div>
+                </div>
+                <div>
+                    <label for="senha">Senha: </label>
+                    <input type="password" id="senha" placeholder="Mínimo 6 caracteres" required minlength="6">
+                    <div id="senha-erro"></div>
+                </div>
+                <div>
+                    <button id="botao-enviar" type="submit">Enviar</button>
+                </div>
+            </form>
+        </fieldset>
+    </main>
+    
+
+    <script src="ex06.js"></script>
+</body>
+</html>

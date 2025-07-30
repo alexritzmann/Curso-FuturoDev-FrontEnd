@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+header{
+    background-color: rgb(113, 185, 92);
+    height: 20%;
+}
+
+main{
+    background-color: rgb(120, 120, 192);
+    height: 70%;
+}
+
+footer{
+    background-color: rgb(172, 97, 97);
+    height: 10%;
+}
+
+figure{
+    margin: 0;
+    background-color: rgb(163, 42, 147);
+}
+
+nav{
+    margin: auto;
+    background-color: bisque;
+}
+
+article{
+    margin: 0;
+    background-color: aqua;
+}
+
+section{
+    margin: 0;
+    background-color: red;
+}
+

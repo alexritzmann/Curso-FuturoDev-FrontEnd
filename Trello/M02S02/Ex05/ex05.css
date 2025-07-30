@@ -1,0 +1,45 @@
+*{
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+main{
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+td{
+    text-align: center;
+    border: #141414 solid 1px;
+    padding: 5px;
+}
+
+tbody{
+    background-color: rgb(202, 247, 232);
+}
+
+.tfoot02{
+    background-color: rgb(255, 171, 171);
+}
+
+.tfoot01{
+    background-color: rgb(143, 236, 140);
+}
+
+table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}

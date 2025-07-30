@@ -1,0 +1,63 @@
+ *{
+    margin: 5;
+    padding: 5;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+input{
+    border-radius: 5px;
+    border: 1px solid #141414;
+    padding: 5px;
+    width: 100%;
+}
+
+.botoes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+    grid-gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #141414;
+    padding: 5px;
+    width: 100%;
+}
+
+td{
+    text-align: center;
+    border: #141414 solid 1px;
+    padding: 5px;
+}
+
+tbody{
+    background-color: rgb(202, 247, 232);
+}
+
+.tfoot02{
+    background-color: rgb(255, 171, 171);
+}
+
+.tfoot01{
+    background-color: rgb(143, 236, 140);
+}
+
+.reprovado{
+    color: red;
+}

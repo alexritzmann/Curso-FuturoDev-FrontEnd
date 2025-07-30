@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de celulares</title>
+    <link rel="stylesheet" href="ex04.css" />
+</head>
+<body>
+    <main>
+        <h2>Cadastrar Novo Celular</h2>
+        <form>
+            <div class="celular">
+                <div class="marca">
+                    <label for="marca">Marca</label>
+                    <select id="marca" name="marca">
+                        <option value="apple">Apple</option>
+                        <option value="samsung">Samsung</option>
+                        <option value="motorola">Motorola</option>
+                        <option value="lg">LG</option>
+                    </select>
+                </div>
+
+                <div class="modelo">
+                    <label for="modelo">Modelo</label>
+                    <input id="modelo" type="text">
+                </div>
+
+                <div class="cor">
+                    <label for="cor">Cor</label>
+                    <input id="cor" type="text">
+                </div>
+
+                <div class="valor">
+                    <label for="valor">Valor</label>
+                    <input id="valor" type="number">
+                </div>
+
+                <div class="estado">
+                    <label>
+                        <input type="radio" name="estado" value="novo">NOVO
+                    </label>
+                    <label>
+                        <input type="radio" name="estado" value="usado">USADO
+                    </label>
+                </div>
+
+                <div class="descricao">
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" name="descricao"></textarea>
+                </div>
+
+                <div class="botoes">
+                    <button type="submit">Salvar</button>
+                    <a href="./ex04.html">
+                    <button type="button">Voltar</button>
+                    </a>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

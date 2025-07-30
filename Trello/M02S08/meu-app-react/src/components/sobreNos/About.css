@@ -1,0 +1,18 @@
+
+
+#article-about > h2{
+    padding-inline-start: 40px;
+}
+
+#article-about > div > h2{
+    padding-inline-start: 40px;
+
+}
+
+.img-about{
+    width: 100%;
+}
+
+.list-about{
+    padding-left: 4%;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script>
+        // Ignora erros de extensões
+        window.onerror = function(message, source, lineno, colno, error) 
+        {
+            if (source.includes('inpage.js')) return true;
+            return false;
+        };
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 13</title>
+</head>
+<body>
+    <p id="paragrafo">Manipulação de DOM (ativ1)</p>
+    <h1 id="titulo">Manipulação de DOM</h1>
+    <h2 class="paragrafo">Manipulação de DOM</h2>
+    <p>Atualizar texto do h1 com DOM (ativ2)</p>
+    <h1 id="meuTitulo">Aqui vem o texto que será informado pelo usuário</h1>
+    <p>Colocar URL fornecida na página (ativ3)</p>
+    <img id="imagem" src="" alt="imagem fornecida pela ativ3">
+    <p>Criação do elemento imagem solicitando uma URL (ativ4)</p>
+    <div id="div">Imagem criada depois da DIV</div>
+    <div>imagem criada antes da DIV</div>
+    <p>Solicitar 1 título + 3 parágrafos ao usuário e criar os elementos (ativ5)</p>
+    <div id="tituloParagrafo">Criação a partir daqui:
+    </div>
+
+    <script src="aula13Ativ5.js"></script>
+</body>
+</html>

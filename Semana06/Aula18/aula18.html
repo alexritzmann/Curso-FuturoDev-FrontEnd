@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="aula18.css">
+
+    <script src="aula18Ativ5.js" defer></script>
+    <title>Aula 18</title>
+</head>
+<body>
+     <p>Exemplo Fetch JSON (Ativ1)</p>
+
+     <P>Exemplo RANDOM USER Fetch JSON (Ativ2)</P>
+     <div id="conteudo"></div>
+
+     <P>Exemplo RANDOM USER (PROFESSOR) Fetch JSON (Ativ2-2)</P>
+     <img id="imagem-usuario" alt="Imagem do Usuário">
+     <p id="nome-usuario">Nome do Usuário</p>
+     <p id="email-usuario">Email do Usuário</p>
+     <p id="celular-usuario">Celular do Usuário</p>
+     
+     <p>Simular criação de POST através de API externa (Ativ3)</p>
+     <form id="form">
+        <label for="titulo">Titulo</label>
+        <input id="titulo" type="text">
+        <label for="corpo">Corpo</label>
+        <input id="corpo" type="textarea">
+        <button type="submit" id="button">Salvar</button>
+     </form>
+
+     <p>Implementar salvar no exercicio da aula 3 semana 05 (Ativ4)</p>
+     <form action="">
+        <label for="nome">Nome</label>
+        <input id="nome" type="text">
+
+        <label for="email">Email</label>
+        <input id="email" type="email">
+
+        <label for="senha">Senha</label>
+        <input id="senha" type="password">
+
+        <label for="perfil">Perfil</label>
+        <select name="perfil" id="perfil">
+            <option value="ADM">ADM</option>
+            <option value="consultor">Consultor</option>
+            <option value="analista">Analista</option>
+        </select>
+        <div>
+            <button id="botao-cadastro" type="submit">Cadastrar</button>
+            <button id="botao-limpa" type="button">Limpar</button>
+        </div>
+        <fieldset>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Usuário</th>
+                        <th>Email</th>
+                        <th>Perfil</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    
+                </tbody>
+            </table>
+        </fieldset>
+    </form>
+
+    <p>Implementar tela de login no exercicio da aula 3 semana 05 (Ativ5)</p>
+    <h2>Login</h2>
+    <form>
+        <fieldset>
+            <label for="email2">Email</label>
+            <input id="email2" type="email">
+
+            <label for="senha2">Senha</label>
+            <input id="senha2" type="password">
+            
+            <button id="botao-mostrar" type="button"></button>
+        </fieldset>
+        <div class="botoes">
+            <button id="botao-entrar" type="submit">Entrar</button>
+            <button id="botao-cadastrar" type="button">Cadastrar</button>
+        </div>
+    </form>
+
+</body>
+</html>

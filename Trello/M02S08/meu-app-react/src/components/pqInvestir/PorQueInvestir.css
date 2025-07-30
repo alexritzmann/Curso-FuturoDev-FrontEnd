@@ -1,0 +1,16 @@
+
+#article-pq-investir{
+    background-color: rgb(202, 228, 202);
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    color: #020a01;
+    border-left: 4px solid rgb(18, 63, 18);
+    border-radius: 10%;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: fit-content;
+    max-height: fit-content;
+    box-shadow: 0px 0px 10px 0px #000000;
+}
+

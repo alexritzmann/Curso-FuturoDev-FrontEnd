@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="ex03.js" defer></script>
+    <link rel="stylesheet" href="ex03.css">
+
+    <title>Exercício 03</title>
+</head>
+<body>
+    <p>Atualizar tela de cadastro de celular do exercício 04 da semana 02</p>
+
+    <main>
+        <h2>Cadastrar Novo Celular</h2>
+        <form id="form">
+            <div class="celular">
+                <div class="marca">
+                    <label for="marca">Marca</label>
+                    <select id="marca" name="marca">
+                        <option value="Apple">Apple</option>
+                        <option value="Samsung">Samsung</option>
+                        <option value="Motorola">Motorola</option>
+                        <option value="LG">LG</option>
+                    </select>
+                </div>
+
+                <div class="modelo">
+                    <label for="modelo">Modelo</label>
+                    <input id="modelo" type="text">
+                </div>
+
+                <div class="cor">
+                    <label for="cor">Cor</label>
+                    <input id="cor" type="text">
+                </div>
+
+                <div class="valor">
+                    <label for="valor">Valor</label>
+                    <input id="valor" type="number">
+                </div>
+
+                <div class="estado">
+                    <label>
+                        <input type="radio" name="estado" value="novo">NOVO
+                    </label>
+                    <label>
+                        <input type="radio" name="estado" value="usado">USADO
+                    </label>
+                </div>
+
+                <div class="descricao">
+                    <label for="descricao">Descrição</label>
+                    <textarea id="descricao" name="descricao"></textarea>
+                </div>
+
+                <div class="botoes">
+                    <button id="botao-salvar" type="submit">Salvar</button>
+                    <a href="../Ex06/ex06.html">
+                    <button id= "botao-voltar" type="button">Voltar</button>
+                    </a>
+                </div>
+            </div>
+        </form>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+
+.container-form{
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+.formulario-orcamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    width: 30%;
+}
+
+.formulario-orcamento > input,
+.formulario-orcamento > textarea{
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 6px;
+    background-color: #f8f9f8;
+    transition: all 0.3s ease;
+}
+
+.formulario-orcamento input:focus,
+.formulario-orcamento textarea:focus {
+  outline: none;
+  border-color: #5a855a;
+  box-shadow: 0 0 0 3px rgba(90, 133, 90, 0.2);
+}
+
+textarea{
+    min-height: 100px;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.formulario-orcamento button {
+  background-color: rgb(58, 94, 58);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+}
+
+.formulario-orcamento button:hover {
+  background-color: rgb(90, 133, 90);
+}
