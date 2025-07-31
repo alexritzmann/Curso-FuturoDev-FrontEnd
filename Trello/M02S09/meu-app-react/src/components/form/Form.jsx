@@ -2,7 +2,20 @@
 
 import { useState } from 'react'
 import { ToastContainer, toast } from "react-toastify";
+import Lottie from "react-lottie";
+import LoadingAnimation from "../../assets/loading.json";
+
 import './Form.css'
+
+
+const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: LoadingAnimation,
+    rendererSettings: {
+        preserveAspectRatio: "xMidYMid slice",
+    },
+};
 
 function Form(){
 
@@ -12,10 +25,10 @@ function Form(){
     const [postDate, setPostDate] = useState('')
     const [postCategory, setPostCategory] = useState('')
 
+    const [loading, setLoading] = useState(false);
 
     function savePost(event){
         event.preventDefault()
-
 
         if(!postTitle || !postDescription || !postURLCover || !postDate || !postCategory){
             toast.error('Preencha todos os campos!')
@@ -31,18 +44,35 @@ function Form(){
         today.setHours(0, 0, 0, 0);
         const selectedDate = new Date(postDate);
         
-        if(selectedDate < today) {
+        if (selectedDate < today) {
             toast.info('Não é possível selecionar uma data passada!');
             return;
         }
 
-        
-        alert('Post cadastrado com sucesso!')
-        setPostTitle('')
-        setPostDescription('')
-        setPostURLCover('')
-        setPostDate('')
-        setPostCategory('')
+        setLoading(true);
+
+        const newPost = {
+            title: postTitle,
+            description: postDescription,
+            cover: postURLCover,
+            date: postDate,
+            category: postCategory
+        }
+
+        setTimeout(() => {
+            const existingPosts = JSON.parse(localStorage.getItem("@posts") || "[]");
+            const updatedPosts = [...existingPosts, newPost];
+            localStorage.setItem("@posts", JSON.stringify(updatedPosts));
+            
+            // Feedback e reset
+            toast.success("Post inserido com sucesso");
+            setPostTitle('')
+            setPostDescription('')
+            setPostURLCover('')
+            setPostDate('')
+            setPostCategory('')
+            setLoading(false);
+        }, 1500);
     }
 
     return (
@@ -70,7 +100,17 @@ function Form(){
                     <option value="Entrevista">Entrevista</option>
                 </select>
 
-                <button type='submit'>Cadastrar</button>
+                {loading ? (
+                    <div className="loading-container">
+                        <Lottie 
+                            options={defaultOptions} 
+                            height={60} 
+                            width={60} 
+                        />
+                    </div>
+                ) : (
+                    <button type="submit">Cadastrar</button>
+                )}
             </form>
             <ToastContainer />
         </div>
