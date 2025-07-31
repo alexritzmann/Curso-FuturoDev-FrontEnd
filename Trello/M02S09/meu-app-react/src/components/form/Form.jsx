@@ -9,6 +9,7 @@ function Form(){
     const [postDescription, setPostDescription] = useState('')
     const [postURLCover, setPostURLCover] = useState('')
     const [postDate, setPostDate] = useState('')
+    const [postType, setPostType] = useState('')
 
     function savePost(event){
         event.preventDefault()
@@ -17,6 +18,7 @@ function Form(){
         setPostDescription('')
         setPostURLCover('')
         setPostDate('')
+        setPostType('')
     }
 
     return (
@@ -35,6 +37,14 @@ function Form(){
 
                 <label htmlFor='postDate'>Data de publicação:</label>
                 <input type="date" id="postDate" value={postDate} onChange={(event) => setPostDate(event.target.value)} />
+
+                <label htmlFor='postType'>Tipodo post</label>
+                <select id="postType" value={postType} onChange={(event) => setPostType(event.target.value)}>
+                    <option value="Artigo">Artigo</option>
+                    <option value="Noticia">Notícia</option>
+                    <option value="Tutorial">Tutorial</option>
+                    <option value="Entrevista">Entrevista</option>
+                </select>
 
                 <button type='submit'>Cadastrar</button>
             </form>

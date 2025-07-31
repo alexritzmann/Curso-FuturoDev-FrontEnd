@@ -54,3 +54,31 @@
     font-weight: 500;
 }
 
+.container-form > form > select{
+    border: #c9c9c9 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.container-form > form > select:hover{
+    border: #242525 1px solid;
+    border-radius: 5px;
+    padding: 11px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.container-form > form > select > option{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.container-form > form > select > option:hover{
+    padding: 11px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
