@@ -1,0 +1,71 @@
+.container-dark-mode {
+  background-color: rgb(58, 94, 58);
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.theme-button {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 12px 30px;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theme-button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+/* Ícone do botão */
+.theme-button::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 12px 30px;
+}
+
+/* Ícone de lua (modo escuro) */
+.theme-button::before {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z'/%3E%3C/svg%3E");
+}
+
+.dark-mode {
+  --cor-header: #1a2e1a;
+  --cor-nav: #2c4d2c;
+  --cor-sobre: #2e3a2e;
+  --cor-pq-investir: #3a3a3a;
+  --cor-produtos: #2e3a2e;
+  --cor-budget: #3a3a3a;
+  --texto-principal: #e0e0e0;
+  --texto-claro: #ffffff;
+  --fundo-body: #121212;
+}
+
+.light-mode {
+  --cor-header: rgb(58, 94, 58);
+  --cor-nav: rgb(90, 133, 90);
+  --cor-sobre: rgb(179, 197, 174);
+  --cor-pq-investir: lightgray;
+  --cor-produtos: rgb(179, 197, 174);
+  --cor-budget: lightgray;
+  --texto-principal: #333333;
+  --texto-claro: #ffffff;
+  --fundo-body: #ffffff;
+}
