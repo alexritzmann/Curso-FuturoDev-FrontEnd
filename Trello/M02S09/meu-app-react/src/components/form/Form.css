@@ -33,7 +33,6 @@
 .container-form > form > input:hover{
     border: #242525 1px solid;
     border-radius: 5px;
-    padding: 11px;
     font-size: 15px;
     font-weight: 500;
 }
@@ -44,12 +43,15 @@
     padding: 10px;
     font-size: 15px;
     font-weight: 500;
+    max-width: 97%;
+    min-width: 97%;
+    max-height: 150px;
+    min-height: 25px;
 }
 
 .container-form > form > textarea:hover{
     border: #242525 1px solid;
     border-radius: 5px;
-    padding: 11px;
     font-size: 15px;
     font-weight: 500;
 }
@@ -65,7 +67,6 @@
 .container-form > form > select:hover{
     border: #242525 1px solid;
     border-radius: 5px;
-    padding: 11px;
     font-size: 15px;
     font-weight: 500;
 }
@@ -77,8 +78,22 @@
 }
 
 .container-form > form > select > option:hover{
-    padding: 11px;
     font-size: 15px;
     font-weight: 500;
+}
+
+.required-field::after {
+  content: " *";
+  color: red;
+}
+
+.input-error {
+  border: 1px solid #ff6b6b;
+}
+
+.error-message {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  margin-top: 4px;
 }
 
