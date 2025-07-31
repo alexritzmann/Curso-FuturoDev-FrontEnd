@@ -17,7 +17,7 @@ const defaultOptions = {
     },
 };
 
-function Form(){
+function Form({ onNewPost }){
 
     const [postTitle, setPostTitle] = useState('')
     const [postDescription, setPostDescription] = useState('')
@@ -72,6 +72,7 @@ function Form(){
             setPostDate('')
             setPostCategory('')
             setLoading(false);
+            onNewPost();
         }, 1500);
     }
 
@@ -109,7 +110,7 @@ function Form(){
                         />
                     </div>
                 ) : (
-                    <button type="submit">Cadastrar</button>
+                    <button className='register-button' type="submit">Cadastrar</button>
                 )}
             </form>
             <ToastContainer />

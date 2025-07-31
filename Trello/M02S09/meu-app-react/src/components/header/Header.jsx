@@ -3,15 +3,14 @@
 import './Header.css'
 
 
-function Header() {
+function Header({ postCount }) {
   
     return (
     <>
         <div className='container-header'>
             <h1>Painel de Gerenciamento</h1>
-            <h3>Atualmente, você tem <strong>XXX posts</strong> cadastrados</h3>
-        </div>
-        
+            <h3>Atualmente, você tem <strong>{postCount} posts</strong> cadastrados</h3>
+        </div> 
     </>
   )
 }
