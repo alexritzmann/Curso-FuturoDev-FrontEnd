@@ -21,3 +21,36 @@
 .container-form > form > label{
     font-weight: bold;
 }
+
+.container-form > form > input{
+    border: #c9c9c9 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.container-form > form > input:hover{
+    border: #242525 1px solid;
+    border-radius: 5px;
+    padding: 11px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.container-form > form > textarea{
+    border: #c9c9c9 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.container-form > form > textarea:hover{
+    border: #242525 1px solid;
+    border-radius: 5px;
+    padding: 11px;
+    font-size: 15px;
+    font-weight: 500;
+}
+

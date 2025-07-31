@@ -7,6 +7,7 @@ function Form(){
 
     const [postTitle, setPostTitle] = useState('')
     const [postDescription, setPostDescription] = useState('')
+    const [postURLCover, setPostURLCover] = useState('')
 
     function savePost(event){
         event.preventDefault()
@@ -25,6 +26,9 @@ function Form(){
 
                 <label htmlFor='postDescription'>Descricão:</label>
                 <textarea id="postDescription" placeholder='Descricão' value={postDescription} onChange={(event) => setPostDescription(event.target.value)} />
+
+                <label htmlFor='postURLCover'>URL da Capa:</label>
+                <input type="text" id="postURLCover" placeholder='URL da imagem da Capa' value={postURLCover} onChange={(event) => setPostURLCover(event.target.value)} />
 
                 <button type='submit'>Cadastrar</button>
             </form>
