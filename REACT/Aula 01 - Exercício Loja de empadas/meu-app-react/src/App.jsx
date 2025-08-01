@@ -7,10 +7,16 @@ import Header from './components/Header.jsx'
 import ItemCardapio from './components/ItemCardapio.jsx'
 import Footer from './components/Footer.jsx'
 import ItemFeedback from './components/ItemFeedback.jsx'
+import { useState } from 'react'
 
 
 
 function App() {
+
+
+  const [produtoEmpadas, setProdutoEmpadas] = useState([])
+
+  
   useEffect(() => {
     const link = document.createElement('link')
     link.rel = 'stylesheet'
@@ -20,7 +26,14 @@ function App() {
     link.referrerPolicy = 'no-referrer'
     
     document.head.appendChild(link)
-    
+
+
+
+      const empadas = JSON.parse(localStorage.getItem('empadas')) || []
+      setProdutoEmpadas(empadas)
+
+
+
     return () => {
       document.head.removeChild(link)
     }
@@ -28,70 +41,81 @@ function App() {
 
   return (
     <div>
-      <Header/>
+      <Header />
       <main>
         <section>
           <h2>Nosso Cardápio Tech</h2>
-          <div className='container-cardapio'>
-            <ItemCardapio 
-              title="Empada de carne" 
-              descripition="Empada de carne deliciosa com carne de primeira" 
-              price={10}
-            />
-            <ItemCardapio 
-              title="Empada de frango" 
-              descripition="Empada recheada com frango temperado e cremoso" 
-              price={9}
-            />
-            <ItemCardapio 
-              title="Empada de queijo" 
-              descripition="Empada com queijo derretido e massa crocante" 
-              price={8}
-            />
-            <ItemCardapio 
-              title="Empada de camarão" 
-              descripition="Empada especial com camarão fresco e temperos" 
-              price={12}
-            />
-            <ItemCardapio 
-              title="Empada vegetariana" 
-              descripition="Empada recheada com legumes selecionados e especiarias" 
-              price={9}
-            />
-            <ItemCardapio 
-              title="Empada doce" 
-              descripition="Empada doce com recheio de goiabada e queijo" 
-              price={7}
-            />
+          <div className="container-cardapio">
+
+            {produtoEmpadas.map((empada, index) => (
+              <ItemCardapio
+                key={index}
+                title={empada.nameEmpada}
+                descripition={empada.descriptionEmpada}
+                price={empada.priceEmpada}
+              />
+            ))}
+
+            {/* MÉTODO ANTIGO DE CADASTRO DE EMPADAS (MANUAL) 
+        <ItemCardapio 
+          title="Empada de carne" 
+          descripition="Empada de carne deliciosa com carne de primeira" 
+          price={10}
+        />
+        <ItemCardapio 
+          title="Empada de frango" 
+          descripition="Empada recheada com frango temperado e cremoso" 
+          price={9}
+        />
+        <ItemCardapio 
+          title="Empada de queijo" 
+          descripition="Empada com queijo derretido e massa crocante" 
+          price={8}
+        />
+        <ItemCardapio 
+          title="Empada de camarão" 
+          descripition="Empada especial com camarão fresco e temperos" 
+          price={12}
+        />
+        <ItemCardapio 
+          title="Empada vegetariana" 
+          descripition="Empada recheada com legumes selecionados e especiarias" 
+          price={9}
+        />
+        <ItemCardapio 
+          title="Empada doce" 
+          descripition="Empada doce com recheio de goiabada e queijo" 
+          price={7}
+        />
+        */}
           </div>
         </section>
       </main>
 
-      <Footer/>
+      <Footer />
 
-      <section className='feedback-section'>
+      <section className="feedback-section">
         <h2>FeedBack</h2>
-        
+
         <ItemFeedback
           author="João Silva"
-          comment="As empadas são incríveis! Recomendo a de frango."  
+          comment="As empadas são incríveis! Recomendo a de frango."
         />
         <ItemFeedback
           author="João Silva"
-          comment="As empadas são incríveis! Recomendo a de frango."  
+          comment="As empadas são incríveis! Recomendo a de frango."
         />
         <ItemFeedback
           author="João Silva"
-          comment="As empadas são incríveis! Recomendo a de frango."  
+          comment="As empadas são incríveis! Recomendo a de frango."
         />
         <ItemFeedback
           author="João Silva"
-          comment="As empadas são incríveis! Recomendo a de frango."  
+          comment="As empadas são incríveis! Recomendo a de frango."
         />
-        
       </section>
     </div>
-  )
+  );
 }
 
 export default App

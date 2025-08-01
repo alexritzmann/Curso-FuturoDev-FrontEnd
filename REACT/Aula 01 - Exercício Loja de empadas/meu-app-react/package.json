@@ -12,7 +12,9 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-lottie": "^1.2.10",
+    "react-toastify": "^11.0.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.30.1",

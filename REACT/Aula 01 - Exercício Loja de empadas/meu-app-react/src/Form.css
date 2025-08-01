@@ -13,3 +13,70 @@
     text-align: center;
     color: white;
 }
+
+.container-form label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+#btn-cadastrar{
+    margin: 10px;
+    padding: 10px;
+    background-color: #FFF;
+    color: tomato;
+    border: none;
+}
+
+#btn-cadastrar:hover{
+    color: black;
+}
+
+.select-empada{
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.checkbox-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-container > label{
+    cursor: pointer;
+}
+
+.checkbox{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: rgb(71, 184, 27);
+    cursor: pointer;
+}
+
+.fieldset-sabor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.fieldset-sabor > div > label, .fieldset-sabor > div > input{
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: rgb(71, 184, 27);
+    cursor: pointer;
+}

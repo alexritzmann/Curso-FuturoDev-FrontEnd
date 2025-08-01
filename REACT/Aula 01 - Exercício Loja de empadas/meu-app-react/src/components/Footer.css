@@ -47,7 +47,7 @@ footer > section {
   margin-bottom: 25px;
 }
 
-input, textarea {
+input, textarea, select {
   width: 90%;
   padding: 14px;
   border: none;
@@ -58,7 +58,7 @@ input, textarea {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-input:focus, textarea:focus {
+input:focus, textarea:focus, select:focus {
   outline: none;
   box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5);
   background-color: white;
@@ -67,6 +67,7 @@ input:focus, textarea:focus {
 textarea {
   min-height: 60px;
   resize: vertical;
+  max-height: 200px;
 }
 
 .btn-contact {
@@ -87,6 +88,6 @@ textarea {
 button:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-  background: linear-gradient(135deg, #2980b9, #16a085);
+  background: linear-gradient(135deg, #cead7c, #a05416);
 }
 
