@@ -1,0 +1,63 @@
+
+
+.container-post{
+    display: flex;
+    background-attachment: fixed;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+
+}
+.card-post{
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card-image{
+    width: 200px;
+}
+
+.card-info{
+    
+}
+
+.type-post{
+    color: #3C97DC;
+    font-weight: bold;
+}
+
+.title-post{
+
+}
+
+.description-post{
+
+}
+
+.last-info > span{
+    display: flex;
+    justify-content: space-between;
+}
+
+.date-post{
+    color: rgb(92, 92, 92);
+    font-weight:lighter;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.btn-delete{
+    border: none;
+    background-color: transparent;
+    color: #3C97DC;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn-delete:hover{
+    text-decoration: underline;
+}

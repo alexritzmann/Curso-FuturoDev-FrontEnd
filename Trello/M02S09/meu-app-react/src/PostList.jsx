@@ -4,11 +4,13 @@ import { useState, useEffect } from 'react'
 import Header from './components/header/Header'
 
 import './PostList.css'
+import Post from './components/post/Post';
 
 
 function PostList() {
 
   const [postCount, setPostCount] = useState(0);
+  const [listPosts, setListPosts] = useState([])
 
   useEffect(() => {
     const updatePostCount = () => {
@@ -22,6 +24,8 @@ function PostList() {
     return () => window.removeEventListener('storage', updatePostCount);
   }, []);
 
+  const posts = JSON.parse(localStorage.getItem('posts')) || []
+  setListPosts(posts)
   
     return (
     <>
@@ -33,7 +37,17 @@ function PostList() {
 
       <main>
         <section>
-          
+          {listPosts.map((post, index) => (
+            <Post
+              key={index}
+              url={post.url}
+              type={post.category}
+              title={post.title}
+              description={post.description}
+              date={post.date}
+            />
+          ))}
+          <Post />
         </section>
       </main>
     </>
