@@ -1,13 +1,13 @@
 
 
 import { useState, useEffect } from 'react'
-import Form from './components/form/Form'
 import Header from './components/header/Header'
 
-import './App.css'
+import './PostList.css'
 
 
-function App() {
+function PostList() {
+
   const [postCount, setPostCount] = useState(0);
 
   useEffect(() => {
@@ -22,12 +22,8 @@ function App() {
     return () => window.removeEventListener('storage', updatePostCount);
   }, []);
 
-  const handleNewPost = () => {
-    const posts = JSON.parse(localStorage.getItem("@posts") || "[]");
-    setPostCount(posts.length);
-  };
-
-  return (
+  
+    return (
     <>
       <header>
         <section>
@@ -37,12 +33,11 @@ function App() {
 
       <main>
         <section>
-          <Form onNewPost={handleNewPost}/>
+          
         </section>
       </main>
     </>
   )
 }
 
-export default App
-
+export default PostList
