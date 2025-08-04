@@ -10,7 +10,7 @@ function Post({url = "https://png.pngtree.com/png-clipart/20230108/original/pngt
         <section className='container-post'>
             <div className='card-post'>
                 <div className='card-image'>
-                    <img src={url} alt="Url da imagem" />
+                    <img className='image-post' src={url} alt="Url da imagem" />
                 </div>
                 <div className='card-info'>
                     <p className='type-post'>{type}</p>

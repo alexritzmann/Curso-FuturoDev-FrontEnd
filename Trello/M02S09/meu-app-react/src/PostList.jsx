@@ -15,6 +15,8 @@ function PostList() {
   useEffect(() => {
     const updatePostCount = () => {
       const posts = JSON.parse(localStorage.getItem("@posts") || "[]");
+    
+      setListPosts(posts)
       setPostCount(posts.length);
     };
 
@@ -24,8 +26,7 @@ function PostList() {
     return () => window.removeEventListener('storage', updatePostCount);
   }, []);
 
-  const posts = JSON.parse(localStorage.getItem('posts')) || []
-  setListPosts(posts)
+  
   
     return (
     <>
@@ -40,14 +41,13 @@ function PostList() {
           {listPosts.map((post, index) => (
             <Post
               key={index}
-              url={post.url}
+              url={post.cover}
               type={post.category}
               title={post.title}
               description={post.description}
               date={post.date}
             />
           ))}
-          <Post />
         </section>
       </main>
     </>
