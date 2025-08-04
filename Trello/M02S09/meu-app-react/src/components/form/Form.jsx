@@ -35,6 +35,11 @@ function Form({ onNewPost }){
             return
         }
 
+        if(postCategory === 'Selecione'){
+            toast.error('Selecione uma categoria!')
+            return
+        }
+
         if(!postURLCover.startsWith('http') && !postURLCover.startsWith('https')) {
             toast.error('A URL deve começar com http ou https')
             return
@@ -95,7 +100,8 @@ function Form({ onNewPost }){
                 <input type="date" id="postDate" value={postDate} onChange={(event) => setPostDate(event.target.value)} min={new Date().toISOString().split('T')[0]}required/>
 
                 <label className='required-field' htmlFor='postCategory'>Tipo do post</label>
-                <select id="postCategory" value={postCategory} onChange={(event) => setPostCategory(event.target.value)} required>
+                <select id="postCategory" value={postCategory} onChange={(event) => setPostCategory(event.target.value)}>
+                    <option value="Selecione">Selecione uma opção</option>
                     <option value="Artigo">Artigo</option>
                     <option value="Noticia">Notícia</option>
                     <option value="Tutorial">Tutorial</option>

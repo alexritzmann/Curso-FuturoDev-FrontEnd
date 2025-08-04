@@ -3,7 +3,7 @@
 import './Post.css'
 
 
-function Post({ id, url = "https://png.pngtree.com/png-clipart/20230108/original/pngtree-new-post-stock-png-image_8885583.png", type = "Tipo do Post", title = "Título do Post", description = "Descrição do Post", date = "Data do Post", handleDelete }) {
+function Post({ id, url = "https://png.pngtree.com/png-clipart/20230108/original/pngtree-new-post-stock-png-image_8885583.png", type = "Artigo", title = "Título do Post", description = "Descrição do Post", date = "Data do Post", handleDelete }) {
 
     return (
     <>
