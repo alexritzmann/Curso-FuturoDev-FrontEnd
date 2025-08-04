@@ -3,7 +3,7 @@
 import './Post.css'
 
 
-function Post({url = "https://png.pngtree.com/png-clipart/20230108/original/pngtree-new-post-stock-png-image_8885583.png", type = "Tipo do Post", title = "Título do Post", description = "Descrição do Post", date = "Data do Post"}) {
+function Post({ id, url = "https://png.pngtree.com/png-clipart/20230108/original/pngtree-new-post-stock-png-image_8885583.png", type = "Tipo do Post", title = "Título do Post", description = "Descrição do Post", date = "Data do Post", handleDelete }) {
 
     return (
     <>
@@ -19,7 +19,7 @@ function Post({url = "https://png.pngtree.com/png-clipart/20230108/original/pngt
                     <div className='last-info'>
                         <span>
                             <p className='date-post'>Publicado em: {date}</p>
-                            <button className='btn-delete'>Excluir</button>
+                            <button className='btn-delete' onClick={() => handleDelete(id)}>Excluir</button>
                         </span>
                     </div>     
                 </div>

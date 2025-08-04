@@ -7,7 +7,6 @@ import LoadingAnimation from "../../assets/loading.json";
 
 import './Form.css'
 
-
 const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -18,6 +17,7 @@ const defaultOptions = {
 };
 
 function Form({ onNewPost }){
+
 
     const [postTitle, setPostTitle] = useState('')
     const [postDescription, setPostDescription] = useState('')
@@ -52,6 +52,7 @@ function Form({ onNewPost }){
         setLoading(true);
 
         const newPost = {
+            id: Date.now(),
             title: postTitle,
             description: postDescription,
             cover: postURLCover,
