@@ -1,0 +1,19 @@
+
+.container-cardapio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container-cardapio > article{
+  justify-content: center;
+  margin: 5px;
+  
+}
+
+.feedback-section{
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+

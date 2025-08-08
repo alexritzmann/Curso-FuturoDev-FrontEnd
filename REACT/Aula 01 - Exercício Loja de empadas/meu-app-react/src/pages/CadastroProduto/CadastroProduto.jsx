@@ -1,12 +1,12 @@
 
 import { ToastContainer, toast } from 'react-toastify';
-import Lottie from 'react-lottie';
 
 
 import { useState } from 'react'
 import './Form.css'
 
-function Form(){
+function CadastroProduto(){
+
     const notify = () => toast()
 
 
@@ -147,5 +147,5 @@ function Form(){
     )
 }
 
-export default Form
+export default CadastroProduto
 

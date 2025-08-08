@@ -20,10 +20,10 @@
   margin: 0; 
 }
 
-.header-app > nav{
+.header-app nav{
   display: flex;
   justify-content: space-between;
-  margin: 0 30%;
+  margin: 0 15%;
 }
 
 a{

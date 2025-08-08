@@ -1,3 +1,6 @@
+
+import { Link } from "react-router-dom";
+
 import './Header.css' 
 
 function Header (){
@@ -8,9 +11,36 @@ function Header (){
           <p>O sabor que compila o seu paladar!</p>
         </div>
         <nav>
-            <a href="#cardapio">Cardápio</a>
-            <a href="#contato">Contato</a>
-            <a href="#feedback">FeedBack</a>
+          <a>
+            <Link to="/">
+              Nosso Cardápio
+            </Link>
+          </a>
+          <a>
+            <Link to="/Contador">
+              Contador
+            </Link>
+          </a>
+          <a>
+            <Link to="/cadastro">
+              Cadastro de empadas
+            </Link>
+          </a>
+          <a>
+            <Link to="/contato">
+              Contato
+            </Link>
+          </a>
+          <a>
+            <Link to="/feedback">
+              Feedback
+            </Link>
+          </a>
+          <a>
+            <Link to="/carrinho">
+              Carrinho
+            </Link>
+          </a>
         </nav>
       </header>
 

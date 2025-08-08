@@ -1,11 +1,11 @@
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { useState , useEffect } from "react";
+import { toast } from "react-toastify";
+import axios from "axios";
 
-import Header from "../../components/Header"
 import ItemCardapio from "../../components/ItemCardapio"
-import Footer from "../../components/Footer"
-import ItemFeedback from "../../components/ItemFeedback"
+
 
 import "./Home.css";
 
@@ -32,9 +32,19 @@ function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    axios
+      .get("http://localhost:3000/products")
+      .then((response) => {
+        setProdutoEmpadas(response.data);
+      })
+      .catch(() => toast.error("erro ao buscar os produtos"));
+  }, []);
+
+
+
   return (
     <div>
-      <Header />
       <main>
         <section>
           <h2>Nosso Cardápio Tech</h2>
@@ -42,9 +52,7 @@ function Home() {
             {produtoEmpadas.map((empada, index) => (
               <ItemCardapio
                 key={index}
-                title={empada.nameEmpada}
-                descripition={empada.descriptionEmpada}
-                price={empada.priceEmpada}
+                product={empada}
               />
             ))}
 
@@ -84,28 +92,7 @@ function Home() {
         </section>
       </main>
 
-      <Footer />
-
-      <section className="feedback-section">
-        <h2>FeedBack</h2>
-
-        <ItemFeedback
-          author="João Silva"
-          comment="As empadas são incríveis! Recomendo a de frango."
-        />
-        <ItemFeedback
-          author="João Silva"
-          comment="As empadas são incríveis! Recomendo a de frango."
-        />
-        <ItemFeedback
-          author="João Silva"
-          comment="As empadas são incríveis! Recomendo a de frango."
-        />
-        <ItemFeedback
-          author="João Silva"
-          comment="As empadas são incríveis! Recomendo a de frango."
-        />
-      </section>
+  
     </div>
   );
 }
