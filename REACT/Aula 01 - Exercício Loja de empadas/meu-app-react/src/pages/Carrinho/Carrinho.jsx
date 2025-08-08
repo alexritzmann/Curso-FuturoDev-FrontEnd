@@ -32,6 +32,11 @@ function Carrinho() {
     const mensagem = `Olá, desejo ${quantidade} empadas no valor de ${valor}`;
     const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
     window.open(url, "_blank");
+
+    window.alert("Pedido enviado com sucesso!");
+
+    localStorage.removeItem("@carrinho");
+    setCarrinho([]);
   }
 
   return (
