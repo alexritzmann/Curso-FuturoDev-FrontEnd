@@ -7,6 +7,6 @@ import Post from './components/post/Post.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <PostList />
+    <App />
   </StrictMode>,
 )
